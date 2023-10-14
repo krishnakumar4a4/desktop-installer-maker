@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desktop Installer Maker</title>
+    <script type="module" src="/screens/nav.js" defer></script>
+    <style>
+      .logo.vanilla:hover {
+        filter: drop-shadow(0 0 2em #ffe21c);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Screen 3</h1>
+
+      <p>Select Install location</p>
+
+      <form class="row" id="greet-form">
+        <input id="greet-input" placeholder="Enter a name..." />
+        <button type="submit">Greet</button>
+      </form>
+
+      <p id="greet-msg"></p>
+
+      <!-- Copy this button section for all your HTML files -->
+      <div style="float:right;padding-right: 50px;padding-bottom: 50px">
+        <button id="prev-btn">Previous</button>
+        <button id="finish-btn">Finish</button>
+      </div>
+    
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "../src",
+    "distDir": "../src",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "installer",
+    "version": "0.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.tauri.dev",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ]
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "label": "screen-1",
+        "fullscreen": false,
+        "resizable": true,
+        "title": "Welcome",
+        "width": 800,
+        "height": 600,
+        "url": "screens/screen-1.html"
+      },
+      {
+        "label": "screen-2",
+        "fullscreen": false,
+        "resizable": true,
+        "title": "User Selection",
+        "width": 800,
+        "height": 600,
+        "url": "screens/screen-2.html"
+      },
+      {
+        "label": "screen-3",
+        "fullscreen": false,
+        "resizable": true,
+        "title": "Install Location",
+        "width": 800,
+        "height": 600,
+        "url": "screens/screen-3.html"
+      }
+    ]
+  }
+}
