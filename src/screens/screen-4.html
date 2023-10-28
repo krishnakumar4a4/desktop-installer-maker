@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Installation</title>
     <script type="module" src="/screens/nav.js" defer></script>
-    <script type="module" src="/screens/screen-3.js" defer></script>
+    <script type="module" src="/screens/screen-4.js" defer></script>
     <style>
       .logo.vanilla:hover {
         filter: drop-shadow(0 0 2em #ffe21c);
@@ -17,19 +17,24 @@
   <body>
     <div class="outer-container">
       <div class="container">
-        <h1>Install Location</h1>
-
-        <p>Your app will be installed to this location</p>
-        <form>
-          <input id="install-folder" type="text" placeholder="Install Path"/>
-        </form>
+        <h1>Install Progress</h1>
+        <!-- <center><div class="loader" id="loader" ></div></center> -->
+        <center>
+          <div class="wrapper">
+            <div class="progress-bar">
+              <span class="progress-bar-fill" style="width: 0%;"></span>
+            </div>
+          </div>
+        </center>
+        <p id="install-error-description"></p>
+        <h2 id="install-success-message"></h2>
       </div>
 
       <!-- Copy this button section for all your HTML files -->
       <div class="row">
         <div class="column">
-          <button id="prev-btn">Previous</button>
-          <button id="next-btn">Next</button>
+          <button id="start-btn">Start</button>
+          <button id="finish-btn">Finish</button>
         </div>
       </div>
     </div>

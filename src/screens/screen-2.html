@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desktop Installer Maker</title>
+    <title>Installation</title>
     <script type="module" src="/screens/screen-2.js" defer></script>
     <script type="module" src="/screens/nav.js" defer></script>
     <style>
@@ -15,17 +15,32 @@
   </head>
 
   <body>
-    <div class="container">
-      <h1>Screen 2</h1>
+    <div class="outer-container">
+      <div class="container">
+        <h1>Install Scope</h1>
 
-      <p id="greet">Select User to install</p>
+        <!--
+        <div style="float">
+          <span id="greet">Identify User to install</span>
+          <button id="identify-user-btn">Click Here</button>
+        </div>
+        -->
 
-      <!-- Copy this button section for all your HTML files -->
-      <div style="float:right;padding-right: 50px;padding-bottom: 50px">
-        <button id="prev-btn">Previous</button>
-        <button id="next-btn">Next</button>
+        <center>
+          <select  name="List of Users" id="users-list" style="width:200px; float">
+          </select>
+        </center>
+
+        <p id="user-name-identify-notice"></p>
       </div>
-    
+
+            <!-- Copy this button section for all your HTML files -->
+      <div class="row">
+        <div class="column">
+          <button id="prev-btn">Previous</button>
+          <button id="next-btn">Next</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>

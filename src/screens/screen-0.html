@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Installation</title>
     <script type="module" src="/screens/nav.js" defer></script>
-    <script type="module" src="/screens/screen-3.js" defer></script>
+    <script type="module" src="/screens/screen-0.js" defer></script>
     <style>
       .logo.vanilla:hover {
         filter: drop-shadow(0 0 2em #ffe21c);
@@ -17,19 +17,15 @@
   <body>
     <div class="outer-container">
       <div class="container">
-        <h1>Install Location</h1>
-
-        <p>Your app will be installed to this location</p>
-        <form>
-          <input id="install-folder" type="text" placeholder="Install Path"/>
-        </form>
+        <h1>Welcome to Desktop Installer Maker</h1>
+        <h2 id="elevate-required-err">Installer requires to be run with elevated privileges</h2>
+        <h2 id="elevate-required-err">Please close and re-run as admin/root</h2>
       </div>
 
-      <!-- Copy this button section for all your HTML files -->
       <div class="row">
         <div class="column">
-          <button id="prev-btn">Previous</button>
-          <button id="next-btn">Next</button>
+        <button id="elevate-btn">Run With Admin</button>
+          <button id="finish-btn">Close</button>
         </div>
       </div>
     </div>

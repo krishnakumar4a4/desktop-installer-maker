@@ -16,6 +16,15 @@ tauri-build = { version = "1.5", features = [] }
 tauri = { version = "1.5", features = ["shell-open"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
+whoami = "1.4.1"
+
+[target.'cfg(not(windows))'.dependencies]
+## Sudo check for macos and linux
+sudo = "0.6.0"
+
+[target.'cfg(windows)'.dependencies]
+## windows registry
+winreg = "0.50.0"
 
 [features]
 # this feature is used for production builds or when `devPath` points to the filesystem

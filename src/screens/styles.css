@@ -4,7 +4,7 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #0f0f0f;
+  color: #53d7b8;
   background-color: #f6f6f6;
 
   font-synthesis: none;
@@ -12,17 +12,30 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  /* background-image: url("/assets/tauri.svg"); */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-attachment: fixed;
+
+  height: 100vh;
 }
 
 .container {
   margin: 0;
-  padding-top: 10vh;
+  /* padding-top: 10vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  height: 70vh;
 }
 
+/* .outer-container {
+  height: 100vh;
+} */
+
+/*
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -32,11 +45,20 @@
 
 .logo.tauri:hover {
   filter: drop-shadow(0 0 2em #24c8db);
-}
+}*/
+
 
 .row {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  height: 28vh;
+}
+
+.column {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding-right: 10vh;
 }
 
 a {
@@ -53,6 +75,17 @@ h1 {
   text-align: center;
 }
 
+#elevate-required-err {
+  text-align: center;
+  color: red;
+}
+
+#install-success-message {
+  text-align: center;
+  color: #09efef;
+}
+
+
 input,
 button {
   border-radius: 8px;
@@ -62,9 +95,11 @@ button {
   font-weight: 500;
   font-family: inherit;
   color: #0f0f0f;
-  background-color: #ffffff;
+  background-color: #09efef;
   transition: border-color 0.25s;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  min-height: 8vh;
+  min-width: 23vh;
 }
 
 button {
@@ -74,9 +109,15 @@ button {
 button:hover {
   border-color: #396cd8;
 }
+
 button:active {
   border-color: #396cd8;
-  background-color: #e8e8e8;
+  background-color: #11dfdf;
+}
+
+button:disabled {
+  border-color: #8994ab;
+  background-color: #869191;
 }
 
 input,
@@ -84,6 +125,7 @@ button {
   outline: none;
 }
 
+/*
 #greet-input {
   margin-right: 5px;
 }
@@ -106,4 +148,41 @@ button {
   button:active {
     background-color: #0f0f0f69;
   }
+}
+*/
+
+.loader {
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #3498db; 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*css progress bar vanilla*/
+.wrapper {
+  width: 500px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #c5d1ce;
+  padding: 3px;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.progress-bar-fill {
+  display: block;
+  height: 22px;
+  background-color: #53d7b8;
+  border-radius: 3px;
+  
+  transition: width 500ms ease-in-out;
 }
