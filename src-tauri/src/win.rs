@@ -55,9 +55,9 @@ pub async fn start_install(handle: tauri::AppHandle, state: tauri::State<'_, cra
     use winreg::RegKey;
 
     let hklm = RegKey::predef(HKEY_LOCAL_MACHINE);
-    dbg!("hklm: {:?}", hklm);
+    dbg!("hklm: {:?}", &hklm);
     let (reg, disp) = hklm.create_subkey("SYSTEM\\CurrentControlSet\\Services\\TestApp").unwrap();
-    dbg!("test app reg: {:?}", reg);
+    dbg!("test app reg: {:?}", &reg);
     reg.set_value("test_path", &"C:\\TestApp\\config.toml").unwrap();
     dbg!("setting reg value");
 
