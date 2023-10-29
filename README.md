@@ -4,6 +4,17 @@ Fully customizable User Interface with HTML/CSS/Javascript.
 Code your installation actions in Rustlang and leverage all libraries from Rust ecosystem.
 Built with Tauri + Vanilla + Rust.
 
+## How to use this template
+1. Fork this repository.
+2. Add/Remove screen-<>.html and screen-<>.js as you like. You can customise UX of each screen individually.
+3. Use common styles.css for customisation.
+4. When you add/remove screens, you should update navigation rules in rust code in main.rs.
+5. You should also add rust code for actions your installer needs to perform on each screen.
+5. Build & Run for a local preview
+6. Push to remote and let the github actions generate installers for you.
+
+> ![Installer in Action](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWw1M3IyYnptMmRheDJpemNxNmV1MHU5MGdiaHY5YzN5eWQ4YjhmaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tqGR8qdQB7UiwQUZCF/giphy.gif)
+
 ## Tauri + Vanilla
 
 This template should help get you started developing with Tauri in vanilla HTML, CSS and Javascript.
@@ -15,12 +26,3 @@ This template should help get you started developing with Tauri in vanilla HTML,
 ## Build & Run
 1. npm install
 2. npm run tauri dev
-
-## How to use this template
-1. Fork this repository.
-2. Add/Remove screen-<>.html and screen-<>.js as you like. You can customise UX of each screen individually.
-3. Use common styles.css for customisation.
-4. When you add/remove screens, you should update navigation rules in rust code in main.rs.
-5. You should also add rust code for actions your installer needs to perform on each screen.
-5. Build & Run for a local preview
-6. Push to remote and let the github actions generate installers for you.

@@ -4,8 +4,8 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #53d7b8;
-  background-color: #f6f6f6;
+  color: #d59902;
+  background-color: #fff9f9;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -95,7 +95,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   color: #0f0f0f;
-  background-color: #09efef;
+  background-color: #d59902;
   transition: border-color 0.25s;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   min-height: 8vh;
@@ -112,7 +112,7 @@ button:hover {
 
 button:active {
   border-color: #396cd8;
-  background-color: #11dfdf;
+  background-color: #d59902;
 }
 
 button:disabled {
@@ -181,7 +181,7 @@ button {
 .progress-bar-fill {
   display: block;
   height: 22px;
-  background-color: #53d7b8;
+  background-color: #d59902;
   border-radius: 3px;
   
   transition: width 500ms ease-in-out;
