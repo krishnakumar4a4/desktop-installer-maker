@@ -39,35 +39,45 @@
         "fullscreen": false,
         "resizable": true,
         "title": "To Be Run As Root",
-        "url": "screens/screen-0.html"
+        "url": "screens/screen-0.html",
+        "visible": false,
+        "center": true
       },
       {
         "label": "screen-1",
         "fullscreen": false,
         "resizable": true,
         "title": "Welcome",
-        "url": "screens/screen-1.html"
+        "url": "screens/screen-1.html",
+        "visible": false,
+        "center": true
       },
       {
         "label": "screen-2",
         "fullscreen": false,
         "resizable": true,
         "title": "User Selection",
-        "url": "screens/screen-2.html"
+        "url": "screens/screen-2.html",
+        "visible": false,
+        "center": true
       },
       {
         "label": "screen-3",
         "fullscreen": false,
         "resizable": true,
         "title": "Install Location",
-        "url": "screens/screen-3.html"
+        "url": "screens/screen-3.html",
+        "visible": false,
+        "center": true
       },
       {
         "label": "screen-4",
         "fullscreen": false,
         "resizable": true,
         "title": "Install Progress",
-        "url": "screens/screen-4.html"
+        "url": "screens/screen-4.html",
+        "visible": false,
+        "center": true
       }
     ]
   }
